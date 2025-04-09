@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaShop - Everything You Need</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo" data-aos="fade-down">
+                <a href="index.html">Mega<span>Shop</span></a>
+            </div>
+            
+            <nav class="main-nav" data-aos="fade-down">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="mega-menu">
+                        <a href="products.html">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Clothing</h4>
+                                <ul>
+                                    <li><a href="products.html?category=men">Men's Fashion</a></li>
+                                    <li><a href="products.html?category=women">Women's Fashion</a></li>
+                                    <li><a href="products.html?category=kids">Kids Wear</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Home Goods</h4>
+                                <ul>
+                                    <li><a href="products.html?category=furniture">Furniture</a></li>
+                                    <li><a href="products.html?category=decor">Decor</a></li>
+                                    <li><a href="products.html?category=kitchen">Kitchen</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Sports</h4>
+                                <ul>
+                                    <li><a href="products.html?category=fitness">Fitness</a></li>
+                                    <li><a href="products.html?category=outdoor">Outdoor</a></li>
+                                    <li><a href="products.html?category=team">Team Sports</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions" data-aos="fade-down">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-actions">
+                    <a href="account.html" class="user-icon"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-in">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">Everything You Need in One Place</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">From fashion to furniture, we've got you covered</p>
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="700">
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+                <a href="#" class="btn btn-outline">View Deals</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="zoom-in" data-aos-delay="900">
+            <img src="images/hero-products.png" alt="Featured Products">
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Shop by Category</h2>
+            <p>Browse our wide selection of products</p>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="category-img">
+                    <img src="images/category-clothing.jpg" alt="Clothing">
+                </div>
+                <div class="category-content">
+                    <h3>Clothing</h3>
+                    <a href="products.html?category=clothing" class="btn btn-small">Shop Now</a>
+                </div>
+            </div>
+            
+            <div class="category-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="category-img">
+                    <img src="images/category-home.jpg" alt="Home Goods">
+                </div>
+                <div class="category-content">
+                    <h3>Home Goods</h3>
+                    <a href="products.html?category=home" class="btn btn-small">Shop Now</a>
+                </div>
+            </div>
+            
+            <div class="category-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="category-img">
+                    <img src="images/category-sports.jpg" alt="Sports Equipment">
+                </div>
+                <div class="category-content">
+                    <h3>Sports Equipment</h3>
+                    <a href="products.html?category=sports" class="btn btn-small">Shop Now</a>
+                </div>
+            </div>
+            
+            <div class="category-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="category-img">
+                    <img src="images/category-electronics.jpg" alt="Electronics">
+                </div>
+                <div class="category-content">
+                    <h3>Electronics</h3>
+                    <a href="products.html?category=electronics" class="btn btn-small">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Featured Products</h2>
+            <p>Our most popular items this week</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product cards will be loaded via JavaScript -->
+        </div>
+        
+        <div class="section-footer" data-aos="fade-up">
+            <a href="products.html" class="btn btn-primary">View All Products</a>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter" data-aos="fade-up">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get updates on new products and special offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>MegaShop</h3>
+                <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@megashop.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 MegaShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" data-aos="fade-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
